@@ -42,6 +42,7 @@ brew:
     - webstorm
     - phpstorm
     - rider
+    - etcher
   packages:
     - mas
     - zsh 
