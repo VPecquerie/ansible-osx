@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+  tasks: 
+    # Install All applications:
+    - include: packages/brew.yml
+    - include: packages/gem.yml
+    - include: packages/pip.yml
+    - include: packages/npm.yml
+
+    # Configure Tools: 
+    - include: tools/git.yml
+    - include: tools/vim.yml
+    
