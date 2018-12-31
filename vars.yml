@@ -62,7 +62,7 @@ mas:
   - 409789998
 
 npm_packages:
-  - @angular/cli
+  - '@angular/cli'
   - cordova
   - ionic
   - yarn
