@@ -1,0 +1,10 @@
+---
+- include_vars: ../vars.yml
+
+- name: Install global Pip packages.
+  pip:
+    name: "{{ item.name | default(item) }}"
+    state: "{{ item.state | default('present') }}"
+    version: "{{ item.version | default(omit) }}"
+    executable: "{{ item.executable | default(omit) }}"
+  with_items: "{{ pip_packages }}"

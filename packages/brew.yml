@@ -1,0 +1,18 @@
+---
+- include_vars: vars.yml
+
+- name: Add Brew Taps
+  homebrew_tap: 
+    name: "{{ item }}"
+  with_items: "{{ brew.taps }}"
+
+- name: Add Brew Casks 
+  homebrew_cask: 
+    name: "{{ item }}" 
+    state: installed
+  with_items: "{{ brew.casks }}"
+
+- name: Add brew packages
+  homebrew:
+    name: "{{ brew.packages }}"
+    state: installed
