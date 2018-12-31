@@ -15,4 +15,4 @@ echo "Etape 5 : Clonage du dépôt GIT."
 git clone https://github.com/VPecquerie/ansible-osx.git ~/.ansible_sources
 
 echo "Etape 6 : Initialisation d'Ansible."
-cd ~/.ansible_sources && ansible-playbook osx.yml -i hosts -vvv
+cd ~/.ansible_sources && sudo ansible-playbook osx.yml -i hosts -vvv
