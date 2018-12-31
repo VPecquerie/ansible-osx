@@ -1,5 +1,5 @@
 ---
-- include_vars: vars.yml
+- include_vars: ../vars.yml
 
 - name: Add Brew Taps
   homebrew_tap: 
