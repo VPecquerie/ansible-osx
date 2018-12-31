@@ -1,5 +1,7 @@
 - name: Install the patched vim for mac
   command: 'brew install macvim --env-std --with-override-system-vim'
+  become: yes
+  become_user: '{{ username }}'
 
 - name: Clone the Ultimate vim configuration
   git:
@@ -7,7 +9,9 @@
     dest: '{{ userdir }}/.vim_runtime'
 
 - name: Install the Ultimate vim configuration
-  command: 'sh {{ userdir }}/install_awesome_vimrc.sh'
+  command: 'sh {{ userdir }}/.vim_runtime/install_awesome_vimrc.sh'
+  become: yes
+  become_user: '{{ username }}'
 
 - name: Clone Maximum Awesome for VIM
   git:
@@ -16,4 +20,5 @@
 
 - name: Install Maximum Awesome
   command: 'cd /tmp/maxium-awesome && rake'
-
+  become: yes
+  become_user: '{{ username }}'

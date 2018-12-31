@@ -5,14 +5,18 @@
   homebrew_tap: 
     name: "{{ item }}"
   with_items: "{{ brew.taps }}"
+  become: yes
+  become_user: '{{ username }}'
 
 - name: Add Brew Casks 
   homebrew_cask: 
     name: "{{ item }}" 
-    state: installed
   with_items: "{{ brew.casks }}"
+  become: yes
+  become_user: '{{ username }}'
 
 - name: Add brew packages
   homebrew:
     name: "{{ brew.packages }}"
-    state: installed
+  become: yes
+  become_user: '{{ username }}'

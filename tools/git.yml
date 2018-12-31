@@ -3,12 +3,22 @@
 
 - name: GIT - Set Global Username
   command: git config --global user.name "{{ fullname }}"
+  become: yes
+  become_user: '{{ username }}'
 
 - name: GIT - Set Global Username
   command: git config --global user.email "{{ email }}"
+  become: yes
+  become_user: '{{ username }}'
+
 
 - name: GIT - Set Credential helper
   command: git config --global credential.helper osxkeychain
+  become: yes
+  become_user: '{{ username }}'
+
 
 - name: GIT - Set Global Global Ignore file.
   command: git config --global core.excludesfile ~/.gitignore_global
+  become: yes
+  become_user: '{{ username }}'
