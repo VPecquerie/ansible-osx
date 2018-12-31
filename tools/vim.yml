@@ -19,6 +19,6 @@
     dest: '/tmp/maximum-awesome'
 
 - name: Install Maximum Awesome
-  command: 'cd /tmp/maxium-awesome && rake'
+  command: 'cd /tmp/maximum-awesome && rake'
   become: yes
   become_user: '{{ username }}'
