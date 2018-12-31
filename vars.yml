@@ -38,7 +38,7 @@ brew:
     - skype-for-business
     - kitematic
     - filezilla
-
+    - goofy
   packages:
     - mas
     - zsh 
