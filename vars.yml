@@ -1,0 +1,88 @@
+username: vpecquerie
+userdir: /Users/{{ username }}
+fullname: Vincent PECQUERIE
+email: contact@vincent-p.fr
+brew:
+  taps:
+    - caskroom/cask
+  casks:
+    # Some Quick Look plugins :
+    - qlcolorcode
+    - qlstephen
+    - qlmarkdown
+    - quicklook-json
+    - qlprettypatch
+    - quicklook-csv
+    - betterzip
+    - webpquicklook
+    - suspicious-package
+    # Some Usefull Apps : 
+    - appcleaner 
+    - alfred 
+    - android-file-transfer
+    - font-hack-nerd-font
+    - iterm2
+    - postman 
+    - spotify
+    - visual-studio-code
+    - docker 
+    - gitkraken
+    - mailspring
+    - shiftit
+    - teamviewer
+    - vlc
+    - google-chrome
+    - osxfuse
+    - slack
+    - tunnelblick
+    - google-photos-backup-and-sync
+    - skype-for-business
+    - kitematic
+    - filezilla
+
+  packages:
+    - mas
+    - zsh 
+    - zsh-completions 
+    - python
+    - python3
+    - node
+    - sshfs
+    - archey
+    - figlet
+    - pinentry-mac
+    - glances
+    - gnupg
+    - ntfs-3g
+
+mas: 
+  # Amphétamine
+  - 937984704
+  # Twitter
+  - 409789998
+
+npm_packages:
+  - @angular/cli
+  - cordova
+  - ionic
+  - yarn
+  - npm-check-updates
+  - ndb
+  - htmllint-cli
+  - stylelint
+  - tslint
+  - nodemon
+pip_packages: {}
+gem_packages:
+  - colorls
+
+vscode_extensions: 
+  - fallenwood.vimL
+  - eg2.tslint
+  - fatihacet.gitlab-workflow
+  - robertohuertasm.vscode-icons
+  - PeterJausovec.vscode-docker
+  - ms-vscode.csharp
+  - HookyQR.beautify
+  - ms-mssql.mssql
+  - zhuangtongfa.Material-theme
