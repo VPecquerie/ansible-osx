@@ -39,6 +39,9 @@ brew:
     - kitematic
     - filezilla
     - goofy
+    - webstorm
+    - phpstorm
+    - rider
   packages:
     - mas
     - zsh 
