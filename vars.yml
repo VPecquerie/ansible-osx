@@ -43,6 +43,7 @@ brew:
     - phpstorm
     - rider
     - etcher
+    - microsoft-office
   packages:
     - mas
     - zsh 
