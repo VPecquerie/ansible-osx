@@ -62,6 +62,7 @@ brew:
     - glances
     - gnupg
     - ntfs-3g
+    - gradle
 
 mas: 
   # Amphétamine
