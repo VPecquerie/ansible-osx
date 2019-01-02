@@ -44,6 +44,8 @@ brew:
     - rider
     - etcher
     - microsoft-office
+    - oracle-jdk
+    - android-studio
   packages:
     - mas
     - zsh 
