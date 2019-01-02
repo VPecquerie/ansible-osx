@@ -3,7 +3,8 @@ userdir: /Users/{{ username }}
 fullname: Vincent PECQUERIE
 email: contact@vincent-p.fr
 brew:
-  taps: {}
+  taps: 
+    - caskroom/versions
   casks:
     # Some Quick Look plugins :
     - qlcolorcode
@@ -46,6 +47,7 @@ brew:
     - microsoft-office
     - oracle-jdk
     - android-studio
+    - java8
   packages:
     - mas
     - zsh 
