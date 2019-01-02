@@ -48,6 +48,7 @@ brew:
     - oracle-jdk
     - android-studio
     - java8
+    - dotnet-sdk
   packages:
     - mas
     - zsh 
@@ -63,13 +64,15 @@ brew:
     - gnupg
     - ntfs-3g
     - gradle
+    - gnupg2
 
 mas: 
   # Amphétamine
   - 937984704
   # Twitter
   - 409789998
-
+  # Bandwith+
+  - 490461369
 npm_packages:
   - '@angular/cli'
   - cordova
