@@ -13,12 +13,10 @@ brew:
     - quicklook-json
     - qlprettypatch
     - quicklook-csv
-    - betterzip
     - webpquicklook
     - suspicious-package
     # Some Usefull Apps : 
     - appcleaner 
-    - alfred 
     - android-file-transfer
     - font-hack-nerd-font
     - iterm2
@@ -27,7 +25,6 @@ brew:
     - visual-studio-code
     - docker 
     - gitkraken
-    - mailspring
     - shiftit
     - teamviewer
     - vlc
@@ -35,8 +32,6 @@ brew:
     - osxfuse
     - slack
     - tunnelblick
-    - google-photos-backup-and-sync
-    - skype-for-business
     - kitematic
     - filezilla
     - goofy
@@ -65,6 +60,7 @@ brew:
     - ntfs-3g
     - gradle
     - gnupg2
+    - wireshark
 
 mas: 
   # Amphétamine
@@ -75,8 +71,12 @@ mas:
   - 490461369
 npm_packages:
   - '@angular/cli'
+  - '@ionic/cli'
+  - '@nestjs/cli'
+  - '@nrwl/cli'
+  - http-server
+  - lighthouse
   - cordova
-  - ionic
   - yarn
   - npm-check-updates
   - ndb
@@ -89,12 +89,31 @@ gem_packages:
   - colorls
 
 vscode_extensions: 
-  - fallenwood.vimL
-  - eg2.tslint
-  - fatihacet.gitlab-workflow
-  - robertohuertasm.vscode-icons
-  - PeterJausovec.vscode-docker
+  - mikestead.dotenv
+  
+  # Format and lint
+  - esbenp.prettier-vscode
+
+  # PHP
+  - felixfbecker.php-pack
+  - bajdzis.vscode-twig-pack
+
+  # Angular / TypeScript / NPM
+  - eg2.vscode-npm-script
+  - wix.vscode-import-cost
+  - johnpapa.angular-essentials
+
+  # C# / .NET
   - ms-vscode.csharp
-  - HookyQR.beautify
-  - ms-mssql.mssql
+  - ms-mssql.mssql  
+  
+  # Other
+  - ms-azuretools.vscode-docker
+  - robertohuertasm.vscode-icons
   - zhuangtongfa.Material-theme
+  - ms-vscode-remote.remote-ssh-edit
+  - MS-vsliveshare.vsliveshare
+  - EditorConfig.EditorConfig
+  - DavidAnson.vscode-markdownlint
+  - aaron-bond.better-comments
+  - mhutchie.git-graph
