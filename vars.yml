@@ -1,4 +1,5 @@
 username: vpecquerie
+group: staff
 userdir: /Users/{{ username }}
 fullname: Vincent PECQUERIE
 email: contact@vincent-p.fr

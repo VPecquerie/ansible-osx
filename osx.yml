@@ -11,3 +11,5 @@
     - include: tools/git.yml
     - include: tools/vim.yml
     
+    - include: fonts.yml
+    - include: custom.yml

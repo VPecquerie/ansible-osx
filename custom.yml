@@ -1,0 +1,22 @@
+---
+- include_vars: vars.yml
+
+- name: Install dotfiles
+  git: >
+    repo=https://github.com/VPecquerie/dotfiles.git
+    dest={{userdir}}/.dotfiles
+  ignore_errors: True
+
+- name: Install Vscode extensions
+  command: code --install-extension {{item}}
+  with_items: "{{ vscode_extensions }}"
+  become: yes
+  become_user: "{{ username }}"
+
+- name: Fix Permissions
+  command: chown -R {{ username }}:{{ group }} {{ userdir }}
+  ignore_errors: True
+  
+- name: Fix GPG Permissions
+  command: chmod -R 0600 ~/.gnupg && chmod -R 0700 ~/.gnupg && chmod -R 0700 ~/.gnupg/openpgp-revocs.d && chmod -R 0700 ~/.gnupg/private-keys-v1.d
+  ignore_errors: True

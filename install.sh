@@ -12,7 +12,7 @@ echo "Etape 4 : Installation de GIT."
 brew install git
 
 echo "Etape 5 : Clonage du dépôt GIT."
-git clone https://github.com/VPecquerie/ansible-osx.git ~/.ansible_sources
+git clone https://gitlab.com/VPecquerie/ansible-osx.git ~/.ansible_sources
 
 echo "Etape 6 : Initialisation d'Ansible."
 cd ~/.ansible_sources && sudo ansible-playbook osx.yml -i hosts -vvv
