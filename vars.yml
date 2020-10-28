@@ -40,6 +40,7 @@ brew:
     - oracle-jdk
     - android-studio
     - dotnet-sdk
+    - brave-browser
   packages:
     - mas
     - zsh 
