@@ -16,3 +16,11 @@ git clone https://gitlab.com/VPecquerie/ansible-osx.git ~/.ansible_sources
 
 echo "Etape 6 : Initialisation d'Ansible."
 cd ~/.ansible_sources && sudo ansible-playbook osx.yml -i hosts -vvv
+
+echo "Etape 7: Configuration diverse."
+
+defaults write com.apple.dock autohide-time-modifier -float 0.2
+defaults write com.apple.finder AppleShowAllFiles TRUE
+defaults write com.apple.finder ShowPathbar -bool true
+defaults write com.apple.finder ShowStatusBar -bool true
+chflags nohidden ~/Library
