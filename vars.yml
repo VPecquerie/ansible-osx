@@ -4,8 +4,7 @@ userdir: /Users/{{ username }}
 fullname: Vincent PECQUERIE
 email: contact@vincent-p.fr
 brew:
-  taps: 
-    - caskroom/versions
+  taps: {}
   casks:
     # Some Quick Look plugins :
     - qlcolorcode
@@ -19,7 +18,6 @@ brew:
     # Some Usefull Apps : 
     - appcleaner 
     - android-file-transfer
-    - font-hack-nerd-font
     - iterm2
     - postman 
     - spotify
@@ -34,16 +32,13 @@ brew:
     - slack
     - tunnelblick
     - kitematic
-    - filezilla
-    - goofy
     - webstorm
     - phpstorm
     - rider
-    - etcher
+    - balenaetcher 
     - microsoft-office
     - oracle-jdk
     - android-studio
-    - java8
     - dotnet-sdk
   packages:
     - mas
@@ -62,6 +57,7 @@ brew:
     - gradle
     - gnupg2
     - wireshark
+    - macvim
 
 mas: 
   # Amphétamine
@@ -105,12 +101,11 @@ vscode_extensions:
   - johnpapa.angular-essentials
 
   # C# / .NET
-  - ms-vscode.csharp
+  - ms-dotnettools.csharp
   - ms-mssql.mssql  
   
   # Other
   - ms-azuretools.vscode-docker
-  - robertohuertasm.vscode-icons
   - zhuangtongfa.Material-theme
   - ms-vscode-remote.remote-ssh-edit
   - MS-vsliveshare.vsliveshare
