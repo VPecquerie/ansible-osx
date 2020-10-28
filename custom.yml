@@ -1,11 +1,14 @@
 ---
 - include_vars: vars.yml
 
-- name: Install dotfiles
+- name: Clone dotfiles
   git: >
     repo=https://github.com/VPecquerie/dotfiles.git
     dest={{userdir}}/.dotfiles
   ignore_errors: True
+
+- name: Install dotfiles
+  command: chdir={{userdir}}/.dotfiles bash install.sh
 
 - name: Install Vscode extensions
   command: code --install-extension {{item}}
