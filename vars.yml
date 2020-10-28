@@ -53,7 +53,6 @@ brew:
     - figlet
     - pinentry-mac
     - glances
-    - gnupg
     - ntfs-3g
     - gradle
     - gnupg2

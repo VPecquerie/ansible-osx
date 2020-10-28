@@ -1,9 +1,16 @@
 #!/bin/sh
 echo "Etape 1 : Installation de brew."
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+if ! command -v brew &> /dev/null
+then
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
 
 echo "Etape 2 : Installation d'Ansible."
-brew install Ansible
+if ! command -v ansible &> /dev/null
+then
+    brew install Ansible
+fi
 
 echo "Etape 3 : Instalaltion de XCODE."
 xcode-select --install
