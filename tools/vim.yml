@@ -1,8 +1,3 @@
-- name: Install the patched vim for mac
-  command: 'brew install macvim --env-std --with-override-system-vim'
-  become: yes
-  become_user: '{{ username }}'
-
 - name: Clone the Ultimate vim configuration
   git:
     repo: 'https://github.com/amix/vimrc.git'
