@@ -4,7 +4,8 @@ userdir: /Users/{{ username }}
 fullname: Vincent PECQUERIE
 email: contact@vincent-p.fr
 brew:
-  taps: {}
+  taps: 
+    - AdoptOpenJDK/openjdk
   casks:
     # Some Quick Look plugins :
     - qlcolorcode
@@ -41,6 +42,10 @@ brew:
     - android-studio
     - dotnet-sdk
     - brave-browser
+    - adoptopenjdk11
+    - adoptopenjdk13
+    - adoptopenjdk14
+
   packages:
     - mas
     - zsh 
@@ -58,7 +63,7 @@ brew:
     - gnupg2
     - wireshark
     - macvim
-
+    - jenv
 mas: 
   # Amphétamine
   - 937984704
